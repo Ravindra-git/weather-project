@@ -32,7 +32,7 @@ let weather = {
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
-    document.body.style.backgroundImage ="url('https://github.com/Ravindra-git/weather-project/tree/main/images/"+description+".jpg')";
+    document.body.style.backgroundImage ="url('/main/images/"+description+".jpg')";
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
