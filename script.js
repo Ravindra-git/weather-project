@@ -33,7 +33,6 @@ let weather = {
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage ="url('images/"+description+".jpg')";
-    console.log(description);
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
